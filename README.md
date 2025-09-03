@@ -1,4 +1,4 @@
-# CoQuoí Tutorial
+# CoQuí Tutorial
 This repository contains Jupyter notebooks designed to help you learn and use CoQuí. The tutorials are organized into two tracks depending on your needs:
 
 ## 🚀 Quickstart
