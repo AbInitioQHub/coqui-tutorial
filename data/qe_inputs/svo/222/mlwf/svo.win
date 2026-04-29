@@ -5,3 +5,5 @@ num_bands = 3
 begin projections
 V:dxz,dyz,dxy:x=1,0,0
 end projections
+
+num_print_cycles = 10
