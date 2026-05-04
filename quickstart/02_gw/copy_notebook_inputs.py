@@ -4,25 +4,29 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 NOTEBOOK_DIR = Path(__file__).resolve().parent
 
-SI_222_DIR = ROOT / "data" / "qe_inputs" / "si" / "222"
-SI_777_DIR = ROOT / "data" / "qe_inputs" / "si" / "777"
-COQUI_777_DIR = ROOT / "data" / "coqui" / "si" / "777"
+SI_555_DIR = ROOT / "data" / "qe_inputs" / "si" / "555"
+#SI_222_DIR = ROOT / "data" / "qe_inputs" / "si" / "222"
+#SI_777_DIR = ROOT / "data" / "qe_inputs" / "si" / "777"
+#COQUI_777_DIR = ROOT / "data" / "coqui" / "si" / "777"
 
 COPY_TARGETS = [
-    (SI_222_DIR / "out", NOTEBOOK_DIR / "out_222"),
-    (SI_222_DIR / "si.pw2coqui.in", NOTEBOOK_DIR / "si.pw2coqui.in"),
-    (SI_777_DIR / "out", NOTEBOOK_DIR / "out_777"),
-    (SI_777_DIR / "mlwf" / "si.mlwf.h5", NOTEBOOK_DIR / "mlwf_777" / "si.mlwf.h5"),
-    (COQUI_777_DIR / "si.mbpt.h5", NOTEBOOK_DIR / "coqui_777" / "si.mbpt.h5"),
-    (COQUI_777_DIR / "si_qpg0w0.mbpt.h5", NOTEBOOK_DIR / "coqui_777" / "si_qpg0w0.mbpt.h5"),
+    (SI_555_DIR / "out", NOTEBOOK_DIR / "si_555" / "out"),
+    (SI_555_DIR / "mlwf" / "si.win", NOTEBOOK_DIR / "si_555" / "mlwf" / "si.win"),
+    (SI_555_DIR / "mlwf" / "si.mlwf.h5", NOTEBOOK_DIR / "si_555" / "mlwf" / "si.mlwf.h5"),
+    #(SI_222_DIR / "out", NOTEBOOK_DIR / "si_222" / "out"),
+    #(SI_222_DIR / "mlwf" / "si.win", NOTEBOOK_DIR / "si_222" / "mlwf" / "si.win"),
+    #(SI_222_DIR / "mlwf" / "si.mlwf.h5", NOTEBOOK_DIR / "si_222" / "mlwf" / "si.mlwf.h5"),
+    #(SI_777_DIR / "out", NOTEBOOK_DIR / "si_777" / "out"),
+    #(SI_777_DIR / "mlwf" / "si.mlwf.h5", NOTEBOOK_DIR / "si_777" / "mlwf" / "si.mlwf.h5"),
+    #(SI_777_DIR / "mlwf" / "si.win", NOTEBOOK_DIR / "si_777" / "mlwf" / "si.win"),
+    #(COQUI_777_DIR / "si.mbpt.h5", NOTEBOOK_DIR / "si_777" / "coqui" / "si.mbpt.h5"),
+    #(COQUI_777_DIR / "si_qpg0w0.mbpt.h5", NOTEBOOK_DIR / "si_777" / "coqui" / "si_qpg0w0.mbpt.h5"),
 ]
 
 LEGACY_TARGETS = [
-    NOTEBOOK_DIR / "out_222",
-    NOTEBOOK_DIR / "out_777",
-    NOTEBOOK_DIR / "mlwf_777",
-    NOTEBOOK_DIR / "coqui_777",
-    NOTEBOOK_DIR / "si.pw2coqui.in",
+    #NOTEBOOK_DIR / "si_222",
+    #NOTEBOOK_DIR / "si_777",
+    NOTEBOOK_DIR / "si_555",
 ]
 
 
