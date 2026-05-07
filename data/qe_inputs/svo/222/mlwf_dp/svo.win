@@ -8,9 +8,9 @@ V:dz2,dx2-y2
 O:p
 end projections
 
-dis_win_min = 2.0
-dis_win_max = 30.0
-dis_froz_min = 2.0
-dis_froz_max = 15.5
+!dis_win_min = 2.0
+!dis_win_max = 30.0
+dis_froz_min = 11.5
+dis_froz_max = 13.5
 
 num_print_cycles = 10
