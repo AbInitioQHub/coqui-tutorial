@@ -1,0 +1,9 @@
+num_wann = 3
+exclude_bands : 1-20,24-40
+num_bands = 3
+
+begin projections
+V:dxz,dyz,dxy:x=1,0,0
+end projections
+
+num_print_cycles = 10
