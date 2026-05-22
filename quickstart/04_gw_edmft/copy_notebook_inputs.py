@@ -6,14 +6,13 @@ NOTEBOOK_DIR = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data" / "qe_inputs" / "svo"
 
 COPY_TARGETS = [
-    (
-        DATA_DIR / "666",
-        NOTEBOOK_DIR / "svo_666",
-    ),
+    (DATA_DIR / "666", NOTEBOOK_DIR / "svo_666"),
+    (ROOT / "data" / "coqui" / "svo" / "666" / "svo.mbpt.h5", NOTEBOOK_DIR / "svo.mbpt.h5"),
 ]
 
 LEGACY_TARGETS = [
     NOTEBOOK_DIR / "svo_666",
+    NOTEBOOK_DIR / "svo.mbpt.h5",
 ]
 
 
