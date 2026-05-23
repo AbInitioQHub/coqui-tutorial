@@ -3,16 +3,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 NOTEBOOK_DIR = Path(__file__).resolve().parent
-DATA_DIR = ROOT / "data" / "qe_inputs" / "svo"
+DATA_DIR = ROOT / "data" / "qe_inputs" / "nio"
 
 COPY_TARGETS = [
-    (DATA_DIR / "666", NOTEBOOK_DIR / "svo_666"),
-    (ROOT / "data" / "coqui" / "svo" / "666" / "svo.mbpt.h5", NOTEBOOK_DIR / "svo.mbpt.h5"),
+    (DATA_DIR / "555", NOTEBOOK_DIR / "nio_555"),
+    (ROOT / "data" / "coqui" / "nio" / "555" / "nio.mbpt.h5", NOTEBOOK_DIR / "nio.mbpt.h5"),
 ]
 
 LEGACY_TARGETS = [
-    NOTEBOOK_DIR / "svo_666",
-    NOTEBOOK_DIR / "svo.mbpt.h5",
+    NOTEBOOK_DIR / "nio_555",
+    NOTEBOOK_DIR / "nio.mbpt.h5",
 ]
 
 
