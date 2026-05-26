@@ -14,7 +14,7 @@ E1 = modest.make_embedding(obe.C_space)
 mf_params = {"prefix": "nio", "outdir": "nio_555/out", "nbnd": 40}
 mf = coqui.make_mf(coqui_mpi, params=mf_params, mf_type='qe')
 
-thc_params = {"thresh": 1e-5}
+thc_params = {"thresh": 1e-3}
 thc = coqui.make_thc_coulomb(mf=mf, params=thc_params)
 
 gw_edmft_params = {
