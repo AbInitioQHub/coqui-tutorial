@@ -24,9 +24,9 @@ COPY_TARGETS = [
     ),
 ]
 
-EXCLUDED_FILENAMES = {
-    NOTEBOOK_DIR / "out": {"svo.coqui.h5"},
-}
+#EXCLUDED_FILENAMES = {
+#    NOTEBOOK_DIR / "out": {"svo.coqui.h5"},
+#}
 
 LEGACY_TARGETS = [
     NOTEBOOK_DIR / "out",
