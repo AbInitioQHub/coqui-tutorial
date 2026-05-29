@@ -7,12 +7,12 @@ DATA_DIR = ROOT / "data" / "qe_inputs" / "nio"
 
 COPY_TARGETS = [
     (DATA_DIR / "555", NOTEBOOK_DIR / "nio_555"),
-    (ROOT / "data" / "coqui" / "nio" / "555" / "nio.mbpt.h5", NOTEBOOK_DIR / "nio.mbpt.h5"),
+    (ROOT / "data" / "coqui" / "nio" / "555", NOTEBOOK_DIR / "coqui_chkpts"),
 ]
 
 LEGACY_TARGETS = [
     NOTEBOOK_DIR / "nio_555",
-    NOTEBOOK_DIR / "nio.mbpt.h5",
+    NOTEBOOK_DIR / "coqui_chkpts",
 ]
 
 
