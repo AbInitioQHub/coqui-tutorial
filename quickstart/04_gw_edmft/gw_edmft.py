@@ -2,6 +2,7 @@ import triqs.utility.mpi as mpi
 import triqs_modest as modest
 
 import coqui
+import coqui.dmft
 
 coqui_mpi = coqui.MpiHandler()
 coqui.set_verbosity(coqui_mpi, output_level=1)
