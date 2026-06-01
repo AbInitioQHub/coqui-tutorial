@@ -15,6 +15,7 @@ mf = coqui.make_mf(coqui_mpi, params=mf_params, mf_type="qe")
 
 # Step 2: Build THC Coulomb Hamiltonian
 thc_params = {
+    "ecut": 1.2 * mf.ecutwfc(),
     "thresh": 1e-3,
     "save": "thc.coulomb.h5"
 }
