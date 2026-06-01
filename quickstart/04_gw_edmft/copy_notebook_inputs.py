@@ -13,6 +13,7 @@ COPY_TARGETS = [
 LEGACY_TARGETS = [
     NOTEBOOK_DIR / "nio_555",
     NOTEBOOK_DIR / "coqui_chkpts",
+    NOTEBOOK_DIR / "nio.dmft.h5"
 ]
 
 

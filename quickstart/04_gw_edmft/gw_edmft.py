@@ -17,14 +17,15 @@ mf = coqui.make_mf(coqui_mpi, params=mf_params, mf_type='qe')
 
 thc_params = {
   "ecut": 1.2 * mf.ecutwfc(),
-  "thresh": 1e-3
+  "thresh": 1e-3, 
+  "save": "thc.coulomb.h5"
 }
 thc = coqui.make_thc_coulomb(mf=mf, params=thc_params)
 
 gw_edmft_params = {
-  "outdir": "./",
+  "outdir": "./coqui_chkpts/gw/",
   "prefix": "nio",
-  "niter": 1,
+  "niter": 4,
   "wannier_file": wan_h5,
   "screen_type": "rpa",
   "edmft": {
@@ -32,14 +33,17 @@ gw_edmft_params = {
     "impurity": [
         {
          "degenerate_blk_thresh": 0.001,
-         "length_cycle": 200,
+         "length_cycle": 50,
          "n_warmup_cycles": 5e4,
          "n_cycles": 1e6,
          "perform_tail_fit": True,
          "fit_max_moment": 9,
          "fit_min_w": 2.0,
          "fit_max_w": 10.0,
-         "chemical_potential": {"tolerance": 0.05}
+         "chemical_potential": {
+            "tolerance": 0.1, 
+            "n_cycles": 1e4
+         }
        }
     ]
   }
