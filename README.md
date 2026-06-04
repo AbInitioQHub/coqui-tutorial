@@ -14,3 +14,6 @@ A growing collection of in-depth tutorials that explain the theory, context, and
 - The theory underlying the implementation of methods
 
 > ⚠️ **Note:** The Advanced tutorials are still under active development and are **not ready for users to run or check yet**. 
+
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the contributing workflow.
