@@ -376,7 +376,7 @@ Note: all k-points handled by MPI rank 0
  |  Total number of iterations                :               100             |
  |  Number of CG steps before reset           :                 5             |
  |  Trial step length for line search         :             2.000             |
- |  Convergence tolerence                     :         0.100E-09             |
+ |  Convergence tolerance                     :         0.100E-09             |
  |  Convergence window                        :                -1             |
  |  Iterations between writing output         :                10             |
  |  Iterations between backing up to disk     :               100             |
@@ -390,7 +390,7 @@ Note: all k-points handled by MPI rank 0
  |  Using band disentanglement                :                 T             |
  |  Total number of iterations                :               200             |
  |  Mixing ratio                              :             0.500             |
- |  Convergence tolerence                     :         1.000E-10             |
+ |  Convergence tolerance                     :         1.000E-10             |
  |  Convergence window                        :                 3             |
  *----------------------------------------------------------------------------*
 
