@@ -1,0 +1,17 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) modules/2.4-20250724
+
+The following sticky modules could not be reloaded:
+
+  1) intel-oneapi-mkl
+Sun May 17 16:22:15 EDT 2026
+--------------------------------------------------------------------------
+Ignoring value for oob_tcp_if_exclude on worker7016 (10.250.112.0/20: Did not find interface matching this subnet).
+(You can safely ignore this message.)
+--------------------------------------------------------------------------
+mkdir -p failed for path /home/cyeh/.cache/matplotlib: [Errno 13] Permission denied: '/home/cyeh'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-osgonucn because there was an issue with the default path (/home/cyeh/.cache/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Starting serial run at: 2026-05-17 16:22:19.080343
+Sun May 17 16:23:05 EDT 2026
